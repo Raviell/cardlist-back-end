@@ -1,0 +1,32 @@
+###
+#Requisição GET para listar todos
+GET http://localhost:8080/
+
+###
+#Requisição GET para lsitar detalhes de 1 registro
+GET http://localhost:8080/informacoes/6
+
+###
+#Requisição POST para cadastrar um novo contato
+POST http://localhost:8080/cadastrar
+Content-Type: application/json
+
+{
+    "nome": "Jinzo",
+    "nivel": "6",
+    "tipo": "Fiend",
+    "pontos": "2400/1800"
+}
+
+###
+#Requisição POST para editar um contato
+POST http://localhost:8080/adicionar
+Content-Type: application/json
+
+{
+    "id": 11,
+   "nome": "Jinzo",
+    "nivel": "6",
+    "tipo": "Fiend",
+    "pontos": "2400/1800"
+}
