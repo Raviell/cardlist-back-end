@@ -1,14 +1,17 @@
 ###
 #Requisição GET para listar todos
-GET http://localhost:8080/
+
+@host = https://cardlist-v1.herokuapp.com/
+#@host = http://localhost:8080/
+GET {{host}}
 
 ###
 #Requisição GET para lsitar detalhes de 1 registro
-GET http://localhost:8080/informacoes/6
+GET {{host}}/informacoes/6
 
 ###
 #Requisição POST para cadastrar um novo contato
-POST http://localhost:8080/cadastrar
+POST {{host}}/cadastrar
 Content-Type: application/json
 
 {
@@ -20,7 +23,7 @@ Content-Type: application/json
 
 ###
 #Requisição POST para editar um contato
-POST http://localhost:8080/adicionar
+POST {{host}}/adicionar
 Content-Type: application/json
 
 {
